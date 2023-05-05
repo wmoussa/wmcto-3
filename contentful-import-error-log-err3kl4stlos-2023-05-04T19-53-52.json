@@ -1,0 +1,56 @@
+[
+  {
+    "ts": "2023-05-04T23:54:11.554Z",
+    "level": "error",
+    "error": {
+      "originalError": {
+        "message": "getaddrinfo ENOTFOUND api.contentful.com",
+        "name": "Error",
+        "stack": "Error: getaddrinfo ENOTFOUND api.contentful.com\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)",
+        "config": {
+          "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+          },
+          "transformRequest": [
+            null
+          ],
+          "transformResponse": [
+            null
+          ],
+          "timeout": 30000,
+          "xsrfCookieName": "XSRF-TOKEN",
+          "xsrfHeaderName": "X-XSRF-TOKEN",
+          "maxContentLength": 1073741824,
+          "maxBodyLength": 1073741824,
+          "env": {
+          },
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/8.5.49; feature library-import; sdk contentful-management.js/0.0.0-determined-by-semantic-release; platform node.js/v20.0.0; os macOS/v20.0.0;",
+            "CF-Sequence": "bc9281e3-3ae6-4ce3-93a4-edb312a928a1",
+            "Authorization": "Bearer ...PnVp4",
+            "User-Agent": "axios/0.27.2"
+          },
+          "baseURL": "https://api.contentful.com:443",
+          "httpAgent": false,
+          "httpsAgent": false,
+          "proxy": false,
+          "retryOnError": true,
+          "method": "get",
+          "url": "/spaces/err3kl4stlos",
+          "attempts": 6
+        },
+        "code": "ENOTFOUND",
+        "status": null
+      },
+      "stacktrace": [
+        "Error: Error: getaddrinfo ENOTFOUND api.contentful.com",
+        "/Users/wmoussa/src/gatsby-starter-landing-page/node_modules/contentful-batch-libs/dist/listr.js:24:29",
+        "process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+      ]
+    }
+  }
+]
